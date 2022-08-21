@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Raleway&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.692);
+}
+body{
+    padding: 0 20px;
+    /*Animated Background biblioteca*/
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
+    background-size: 400% 400%;
+    position: relative;
+    animation: animate 7.5s ease-in-out infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Animated Background biblioteca*/
+@keyframes animate{
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+.contatos{
+    max-height: 500px;
+    max-width: 800px;
+}
+.contatos li{
+    display: flex;
+    height: 100px;
+    margin-bottom: 20px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.603);
+    border-radius: 20px;
+    transition:.2s;
+}
+
+li:hover {
+    margin-left: -10px;
+    cursor: pointer;
+    background-color: #FFF;
+}
+.contatos li img{
+    width: 70px;
+    border-radius: 50%;
+    margin: 0 40px;
+}
+.nome{
+    margin-bottom: 5px;
+}
+.descricao{
+    margin-right: 30px;
+}
